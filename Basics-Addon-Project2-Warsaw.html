@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Visit Warsaw</title>
+    <style>
+      body {
+        background-color: #f7e6e6;
+        background-image: radial-gradient(#8d45f7 1.25px, transparent 1.25px),
+          radial-gradient(#8d45f7 1.25px, #f7e6e6 1.25px);
+        background-size: 50px 50px;
+        background-position: 0 0, 25px 25px;
+        font-family: "Roboto", sans-serif;
+      }
+      button {
+        display: block;
+        margin: 15px auto;
+        padding: 10px 15px;
+        font-size: 15px;
+        border-radius: 5px;
+        border-width: 2px;
+        color: white;
+        background: #8d45f7;
+        border: solid;
+        border-color: #8d45f7;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        color: #8d45f7;
+        background-color: white;
+        border-color: #8d45f7;
+        border-style: solid;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 100;
+        background-color: #f7e6e6;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      h2 {
+        text-align: center;
+        font-weight: 100;
+        font-size: 22px;
+      }
+      p {
+        text-align: center;
+        font-weight: 100;
+        font-size: 15px;
+        padding: 10px 30px;
+        line-height: 28px;
+      }
+      .main-picture {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 90%;
+        border-radius: 4px;
+        filter: contrast(110%);
+        transition: transform 300ms ease-in-out, opacity 1000ms ease-in-out;
+      }
+      .main-picture:hover {
+        opacity: 0.6;
+        transform: scale(1.1);
+      }
+      .learn-more {
+        text-decoration: none;
+        font-size: 15px;
+        color: #8d45f7;
+        padding-left: 40px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .container {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 70%;
+        background: white;
+        padding: 40px;
+        margin-bottom: 1em;
+        border-radius: 4px;
+      }
+      .author {
+        text-align: center;
+        font-family: "PT Mono", monospace;
+        padding: 10px;
+        font-size: 14px;
+        margin-bottom: 1em;
+      }
+      .image-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 700px;
+      }
+
+      .grid-pictures:hover {
+        transform: scale(1.5);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .image-gallery img {
+        width: 100%;
+        height: 100%;
+        transition: all 300ms ease-in-out;
+      }
+
+      .night {
+        background: linear-gradient(
+          139deg,
+          rgb(37, 35, 35) 57%,
+          rgb(139, 102, 241) 100%
+        );
+      }
+
+      .night .container {
+        background-color: #e6e6e6;
+      }
+
+      .night h1 {
+        background-color: #333333;
+        color: white;
+      }
+
+      .night .author {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="nightButton">See me at night</button>
+    <div class="container">
+      <h1>Come Visit Warsaw</h1>
+      <h2>City with big history and bigger future</h2>
+      <a href="https://unsplash.com/s/photos/warsaw" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/721/original/warsday1.jpeg?1669754166"
+          alt="warsmain"
+          id="main-picture"
+          width="700px"
+          class="main-picture"
+        />
+      </a>
+      <div class="image-gallery">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/728/original/warsday6.jpeg?1669756290"
+          alt="wars1"
+          id="wars1"
+          class="grid-pictures"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/722/original/warsday2.jpeg?1669754182"
+          alt="wars2"
+          id="wars2"
+          class="grid-pictures"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/723/original/warsday3.jpeg?1669754206"
+          alt="wars3"
+          id="wars3"
+          class="grid-pictures"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/726/original/warsday7.jpeg?1669754634"
+          alt="wars4"
+          id="wars4"
+          class="grid-pictures"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/724/original/warsday4.jpeg?1669754375"
+          alt="wars5"
+          id="wars5"
+          class="grid-pictures"
+        />
+
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/725/original/warsday5.jpeg?1669754550"
+          alt="wars6"
+          id="wars6"
+          class="grid-pictures"
+        />
+      </div>
+      <p>
+        Warsaw is a mixture of relaxing green spaces, historic sites and vivid
+        modernity. <br />
+        Discover the charming Old Town, Wilanów Palace and amazing Lazienki
+        Park, where you can watch free Chopin concerts every Sunday during the
+        summer. Experience a few of the dozens of interactive museums, including
+        the Warsaw Uprising Museum, the Museum of the History of Polish Jews and
+        the Copernicus Science Centre.
+        <br />For exciting nightlife, visit the vibrant Vistula boulevards and
+        upscale clubs.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Warsaw"
+        target="_blank"
+        class="learn-more"
+        >Learn More</a
+      >
+    </div>
+    <div class="author">Coded by Aneta Rybacka 👩‍💻</div>
+  </body>
+  <script>
+    function nightTheme() {
+      let body = document.querySelector("body");
+      if (body.classList.contains("night")) {
+        body.classList.remove("night");
+        nightButton.textContent = "See me at night";
+        document.getElementById("main-picture").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/721/original/warsday1.jpeg?1669754166";
+
+        document.getElementById("wars1").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/728/original/warsday6.jpeg?1669756290";
+        document.getElementById("wars2").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/722/original/warsday2.jpeg?1669754182";
+        document.getElementById("wars3").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/723/original/warsday3.jpeg?1669754206";
+        document.getElementById("wars4").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/726/original/warsday7.jpeg?1669754634";
+        document.getElementById("wars5").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/724/original/warsday4.jpeg?1669754375";
+        document.getElementById("wars6").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/725/original/warsday5.jpeg?1669754550";
+      } else {
+        body.classList.add("night");
+        nightButton.textContent = "Back to Day";
+        document.getElementById("main-picture").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/961/original/wars1.jpeg?1669920918";
+        document.getElementById("wars1").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/973/original/wars5.jpeg?1669921825";
+        document.getElementById("wars2").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/971/original/wars7.jpeg?1669921644";
+        document.getElementById("wars3").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/972/original/wars8.jpeg?1669921685";
+        document.getElementById("wars4").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/968/original/wars2.jpeg?1669921478";
+        document.getElementById("wars5").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/970/original/wars6.jpeg?1669921577";
+        document.getElementById("wars6").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/969/original/wars3.jpeg?1669921524";
+      }
+    }
+
+    let nightButton = document.querySelector("button");
+    nightButton.addEventListener("click", nightTheme);
+  </script>
+</html>
